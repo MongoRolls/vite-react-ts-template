@@ -10,6 +10,7 @@
     "eslint": "eslint",
     "preview": "vite preview",
     "prettier": "prettier --write src/**/*.{ts,tsx,less}",
+    "lint-staged": "lint-staged",
     "pre-check": "tsc && npx lint-staged",
     "postinstall": "husky install",
     "prepare": "husky"
@@ -31,7 +32,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.12.0",
-    "husky": "^9.1.6",
+    "husky": "^9.0.11",
     "lint-staged": "12.5.0",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.14.0",
