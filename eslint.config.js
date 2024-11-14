@@ -12,3 +12,4 @@ export default [
 	pluginReact.configs.flat.recommended,
 	pluginReact.configs.flat['jsx-runtime'] //
 ];
+
