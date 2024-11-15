@@ -1,7 +1,46 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+	// 指定需要编译的文件列表,空数组表示不直接指定文件
+	// "files": [],
+	"compilerOptions": {
+		// 指定ECMAScript目标版本
+		"target": "ESNext",
+		// 对类字段使用Object.defineProperty定义
+		"useDefineForClassFields": true,
+		// 指定要包含的库文件
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		// 不允许编译JavaScript文件
+		"allowJs": false,
+		// 跳过声明文件的类型检查
+		"skipLibCheck": true,
+		// 禁用CommonJS模块的默认导入
+		"esModuleInterop": false,
+		// 允许从没有默认导出的模块中默认导入
+		"allowSyntheticDefaultImports": true,
+		// 启用所有严格类型检查选项
+		"strict": true,
+		// 强制文件名大小写一致
+		"forceConsistentCasingInFileNames": true,
+		// 指定模块系统
+		"module": "ESNext",
+		// 指定模块解析策略
+		"moduleResolution": "Node",
+		// 允许导入JSON模块
+		"resolveJsonModule": true,
+		// 确保每个文件都是一个模块
+		"isolatedModules": true,
+		// 不生成输出文件
+		"noEmit": true,
+		// 指定JSX代码生成
+		"jsx": "react-jsx",
+		// 设置基准目录
+		"baseUrl": ".",
+		// 配置模块路径别名
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	// 指定要包含的文件夹
+	"include": ["src"]
+	// 指定项目引用
+	// "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }
