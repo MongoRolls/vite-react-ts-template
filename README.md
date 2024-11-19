@@ -12,8 +12,6 @@
 * commitlint：在githooks的pre-commit阶段对commit备注信息进行检测。
 * commitizen：git的规范化提交工具，辅助填写commit信息。
 
-### todo
-vite配置
+### 
 
 有时间写一篇配置文章
-
