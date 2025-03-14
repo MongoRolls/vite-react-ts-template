@@ -1,3 +1,5 @@
+# docker build -t <image_name>:<tag> .
+
 # 使用 Node.js 16 作为基础镜像
 FROM node:16
 
@@ -19,6 +21,7 @@ RUN npm run build
 # 将构建后的代码复制到 nginx 镜像中
 FROM nginx:latest
 COPY --from=0 /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # 暴露容器的 8080 端口
 EXPOSE 8080
