@@ -1,3 +1,5 @@
+# docker build -t <image_name>:<tag> .
+
 # 使用 Node.js 16 作为基础镜像
 FROM node:16
 
